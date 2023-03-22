@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import AddTodoItem from '../components/vue/AddTodoItem.vue';
+import TodoList from '../components/react/TodoList';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		
+		<main>
+			<h1>🧑‍🚀 Hello, Astro!</h1>
+			<AddTodoItem client:load>
+				<h2>Todo List: (Astro Boundry)</h2><br>
+				<TodoList client:load />
+			</AddTodoItem>
+			
+		</main>
+
+	</body>
+</html>
