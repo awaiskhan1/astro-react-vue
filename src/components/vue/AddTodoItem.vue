@@ -25,6 +25,7 @@
   <div class="vue-app">
     <div class="vue-wrap">
       <h2 class="vue"><img :src="'/vue.png'" alt="Vue" /> Vue App</h2>
+      <h5>Add Todo Item in [ - React App - ]</h5>
       <form @submit.prevent="submitForm" v-if="!formSubmitted">
        
         <input 
